@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINEL | Bags</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="container">
+    <div class="brand">MINEL</div>
+    <nav id="navbar">
+      <a href="index.html">Home</a>
+      <a href="bags.html" class="active">Bags</a>
+      <a href="belts.html">Belts</a>
+      <a href="wallets.html">Wallets</a>
+      <a href="pets.html">Pets</a>
+    </nav>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Leather Bags</h1>
+    <p>Premium leather bags built for elegance and durability.</p>
+  </section>
+
+  <section class="container category-section">
+    <h2>Our Collection</h2>
+    <div class="products">
+      <div class="product">
+        <img src="https://source.unsplash.com/400x300/?leather,handbag" alt="Handbag">
+        <strong>Handbag</strong>
+        <p class="price">₹2,499</p>
+        <button class="btn-ghost" onclick="openProduct('Handbag')">View</button>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x300/?leather,backpack" alt="Backpack">
+        <strong>Backpack</strong>
+        <p class="price">₹3,499</p>
+        <button class="btn-ghost" onclick="openProduct('Backpack')">View</button>
+      </div>
+      <div class="product">
+        <img src="https://source.unsplash.com/400x300/?leather,briefcase" alt="Briefcase">
+        <strong>Briefcase</strong>
+        <p class="price">₹4,999</p>
+        <button class="btn-ghost" onclick="openProduct('Briefcase')">View</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> MINEL. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <div id="overlay" onclick="toggleMenu()"></div>
+  <script src="script.js"></script>
+</body>
+</html>

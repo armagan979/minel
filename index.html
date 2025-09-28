@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MINEL | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="container">
+    <div class="brand">MINEL</div>
+    <nav id="navbar">
+      <a href="index.html" class="active">Home</a>
+      <a href="bags.html">Bags</a>
+      <a href="belts.html">Belts</a>
+      <a href="wallets.html">Wallets</a>
+      <a href="pets.html">Pets</a>
+    </nav>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Minimalism. Elegance. Leather.</h1>
+    <p>Discover timeless leather goods designed with simplicity and sophistication.</p>
+    <a href="bags.html" class="cta">Shop Now</a>
+  </section>
+
+  <!-- Categories -->
+  <section class="container">
+    <div class="grid">
+      <a href="bags.html" class="card">
+        <img src="https://source.unsplash.com/600x400/?leather,bag" alt="Bags">
+        <div class="body"><h3>Bags</h3><p>Premium leather bags for work & travel.</p></div>
+      </a>
+      <a href="belts.html" class="card">
+        <img src="https://source.unsplash.com/600x400/?leather,belt" alt="Belts">
+        <div class="body"><h3>Belts</h3><p>Handcrafted leather belts with timeless appeal.</p></div>
+      </a>
+      <a href="wallets.html" class="card">
+        <img src="https://source.unsplash.com/600x400/?leather,wallet" alt="Wallets">
+        <div class="body"><h3>Wallets</h3><p>Sleek wallets designed for minimalism.</p></div>
+      </a>
+      <a href="pets.html" class="card">
+        <img src="https://source.unsplash.com/600x400/?dog,collar" alt="Pets">
+        <div class="body"><h3>Pets</h3><p>Leather accessories for your pets.</p></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; <span id="year"></span> MINEL. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <div id="overlay" onclick="toggleMenu()"></div>
+  <script src="script.js"></script>
+</body>
+</html>
